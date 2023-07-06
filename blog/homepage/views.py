@@ -5,7 +5,7 @@ from homepage.models import Post
 from homepage.serializers import PostSerializer
 
 
-class GetAllPostView(APIView):
+class GetAllPostsView(APIView):
     def get(self, request):
         queryset = Post.objects.all()
         serializer = PostSerializer(

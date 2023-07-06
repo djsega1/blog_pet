@@ -1,7 +1,7 @@
 from django.urls import path
 
-from homepage.views import GetAllPostView
+from homepage.views import GetAllPostsView
 
 urlpatterns = [
-    path('posts/', GetAllPostView.as_view()),
+    path('posts/', GetAllPostsView.as_view()),
 ]
